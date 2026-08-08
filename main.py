@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import history, news , users , favorite
+from routers import history, news , users , favorite , ai
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -32,3 +32,4 @@ app.include_router(news.router)
 app.include_router(users.router)
 app.include_router(favorite.router)
 app.include_router(history.router)
+app.include_router(ai.router)

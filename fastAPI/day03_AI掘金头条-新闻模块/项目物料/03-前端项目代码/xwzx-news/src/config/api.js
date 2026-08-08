@@ -13,12 +13,6 @@ export const apiConfig = {
 }
 
 export const aiChatConfig = {
-  // OpenAI API地址
-  apiEndpoint: 'https://ws-i68i4j40kihq5ez0.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions',
-  
-  // API Key (由开发人员指定)
-  apiKey: 'sk-ws-H.ERRYMPE.lsLk.MEQCIEKNwprhtDAq4ENm3jHbTIhdaSSAT4rvupZtZuDC4xs_AiAw0PNMo-RS57sCoMRyfwX1PbFPn0Bh2oKJ5njneAyJlA',
-  
-  // 使用的模型
-  model: 'qwen3.8-max'
+  // 后端 AI 聊天接口（Vite proxy: /api → localhost:8000）
+  apiEndpoint: '/api/ai/chat',
 }
