@@ -1,0 +1,6 @@
+[2026-08-04T10:19:14.562Z] [INIT] Deep Copilot debug log started. file=e:\vscode代码\toutiao_backend\.deep-copilot\logs\session-2026-08-04T10-19-14-562Z.log
+[2026-08-04T10:19:14.563Z] [ACTIVATE] {"version":"0.43.1"}
+[2026-08-04T10:19:14.564Z] [PROVIDERS_LOADED] {"count":4,"ids":["anthropic","custom","deepseek","openai"]}
+[2026-08-04T10:19:14.564Z] [TERMINAL_MONITOR_STARTED] {}
+[2026-08-04T10:19:14.564Z] [STATUSBAR_REGISTERED] {"id":"deepseekAgent.statusBar"}
+[2026-08-04T10:19:14.567Z] [INLINE_COMPLETION_REGISTERED]

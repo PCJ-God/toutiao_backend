@@ -1,0 +1,35 @@
+{
+  "envId": "cloud1-5gh0r8j0272e1c10",
+  "region": "ap-shanghai",
+  "version": "2.0",
+  "framework": {
+    "name": "toutiao-news",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "buildCommand": "cd fastAPI/day03_AI掘金头条-新闻模块/项目物料/03-前端项目代码/xwzx-news && npm install && npm run build",
+          "outputPath": "fastAPI/day03_AI掘金头条-新闻模块/项目物料/03-前端项目代码/xwzx-news/dist",
+          "cloudPath": "/"
+        }
+      },
+      "server": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "toutiao-backend",
+          "servicePath": "/",
+          "containerPort": 80,
+          "dockerfilePath": "Dockerfile",
+          "envVariables": {
+            "MYSQL_HOST": "172.17.0.14",
+            "MYSQL_PORT": "3306",
+            "MYSQL_USER": "toutiao_user",
+            "MYSQL_PASSWORD": "Toutiao@2026!",
+            "MYSQL_DATABASE": "cloud1-5gh0r8j0272e1c10",
+            "SQL_ECHO": "false"
+          }
+        }
+      }
+    }
+  }
+}
